@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200619220943) do
+ActiveRecord::Schema.define(version: 20200619221832) do
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20200619220943) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "neme"
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
